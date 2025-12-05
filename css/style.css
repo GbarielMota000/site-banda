@@ -1,0 +1,119 @@
+body {
+   background-image: url('../arquivos/fundo.png');
+    min-height: 100vh; 
+    margin: 0;
+   
+    color: #000000; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100; 
+    text-align: center;
+    background-color: #060404;
+color: rgb(203, 58, 58);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: noto-sans;
+}
+main {
+  flex-wrap: wrap;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+nav ul li {
+    margin: 0 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+   
+    color: #ffffff; 
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #ff0000;
+    text-decoration: underline; 
+}
+main {
+    margin-top: 100px; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+}
+
+
+h1 {
+    text-align: center;
+    color: inherit; 
+    margin-top: 0;
+    padding-top: 20px; 
+}
+
+.video-container { 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+#historia {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#galeria {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#galeria h2 {
+    color: rgb(203, 58, 58);
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.galeria-container img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
